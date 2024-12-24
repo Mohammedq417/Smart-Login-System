@@ -65,13 +65,13 @@ function displayUser() {
   if (user) {
     usernameSpan.textContent = `Welcome ${user.name}`;
   } else {
-    window.location.href = "index.html";
+    window.location.href = "/index.html";
   }
 }
 
 function logout() {
   localStorage.removeItem("loggedInUser");
-  window.location.href = "index.html";
+  window.location.href = "/index.html";
 }
 
 function validateEmail(email) {
