@@ -71,7 +71,7 @@ function displayUser() {
 
 function logout() {
   localStorage.removeItem("loggedInUser");
-  window.location.href = "/Smart-Login-System/home.html";
+  window.location.href = "../";
 }
 
 function validateEmail(email) {
