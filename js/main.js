@@ -29,7 +29,7 @@ function signUp() {
   users.push({ name, email, password });
   localStorage.setItem("users", JSON.stringify(users));
 
-  window.location.href = "index.html";
+  window.location.href = "https://mohammedq417.github.io/Smart-Login-System/index.html";
 }
 
 function login() {
@@ -51,7 +51,7 @@ function login() {
 
   if (user) {
     localStorage.setItem("loggedInUser", JSON.stringify(user));
-    window.location.href = "home.html";
+    window.location.href = "https://mohammedq417.github.io/Smart-Login-System/home.html";
   } else {
     incorrectMsg.textContent = "Incorrect email or password.";
     incorrectMsg.style.color = "red";
@@ -65,12 +65,13 @@ function displayUser() {
   if (user) {
     usernameSpan.textContent = `Welcome ${user.name}`;
   } else {
-    window.location.href = "index.html";
+    window.location.href = "https://mohammedq417.github.io/Smart-Login-System/index.html";
   }
 }
 
 function logout() {
   localStorage.removeItem("loggedInUser");
+  window.location.href = "https://mohammedq417.github.io/Smart-Login-System/index.html";
 }
 
 function validateEmail(email) {
